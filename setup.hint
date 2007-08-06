@@ -1,5 +1,5 @@
 category: Audio Libs
-requires: cygwin libmtp5
+requires: cygwin libmtp6
 sdesc: "Media Transfer Protocol library (utilities)"
 ldesc: "libmtp is an implementation of Microsoft's Media Transfer 
 Protocol (MTP) in the form of a library suitable primarily for POSIX 
