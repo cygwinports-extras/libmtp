@@ -6,18 +6,18 @@ operating systems. We implement MTP Basic, the stuff proposed for
 standardization.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   libiconv2-1.11-1
   libusb-win32-0.1.12.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   autoconf2.5-2.61-1
   automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  cygport-0.3.7-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
   make-3.81-1
@@ -32,17 +32,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libmtp-0.2.4-X-src.tar.bz2
+  unpack libmtp-0.2.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libmtp-0.2.4-X.cygport all
+  cygport ./libmtp-0.2.5-X.cygport all
 
 This will create:
-  /usr/src/libmtp-0.2.4-X-src.tar.bz2
-  /usr/src/libmtp-0.2.4-X.tar.bz2
-  /usr/src/libmtp-devel-0.2.4-X.tar.bz2
-  /usr/src/libmtp6-0.2.4-X.tar.bz2
+  /usr/src/libmtp-0.2.5-X-src.tar.bz2
+  /usr/src/libmtp-0.2.5-X.tar.bz2
+  /usr/src/libmtp-devel-0.2.5-X.tar.bz2
+  /usr/src/libmtp6-0.2.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -69,13 +69,13 @@ Files included in the binary packages:
   /usr/bin/mtp-thumb.exe
   /usr/bin/mtp-tracks.exe
   /usr/bin/mtp-trexist.exe
-  /usr/share/doc/Cygwin/libmtp-0.2.4.README
-  /usr/share/doc/libmtp-0.2.4/AUTHORS
-  /usr/share/doc/libmtp-0.2.4/COPYING
-  /usr/share/doc/libmtp-0.2.4/ChangeLog
-  /usr/share/doc/libmtp-0.2.4/INSTALL
-  /usr/share/doc/libmtp-0.2.4/README
-  /usr/share/doc/libmtp-0.2.4/TODO
+  /usr/share/doc/Cygwin/libmtp-0.2.5.README
+  /usr/share/doc/libmtp-0.2.5/AUTHORS
+  /usr/share/doc/libmtp-0.2.5/COPYING
+  /usr/share/doc/libmtp-0.2.5/ChangeLog
+  /usr/share/doc/libmtp-0.2.5/INSTALL
+  /usr/share/doc/libmtp-0.2.5/README
+  /usr/share/doc/libmtp-0.2.5/TODO
 
 (libmtp7)
   /usr/bin/cygmtp-7.dll
@@ -86,77 +86,80 @@ Files included in the binary packages:
   /usr/lib/libmtp.dll.a
   /usr/lib/libmtp.la
   /usr/lib/pkgconfig/libmtp.pc
-  /usr/share/doc/libmtp-0.2.4/html/annotated.html
-  /usr/share/doc/libmtp-0.2.4/html/delfile_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/detect_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/dir_2acdc6697d1aceb61658a9ff22a91c68.html
-  /usr/share/doc/libmtp-0.2.4/html/dir_68be5385f6c8459aa065ff3031350951.html
-  /usr/share/doc/libmtp-0.2.4/html/dir_8d32b95aecf3b277f62f9a47d9b979d3.html
-  /usr/share/doc/libmtp-0.2.4/html/dir_917a40a2d6c671ad0f40bc5ec265cc1b.html
-  /usr/share/doc/libmtp-0.2.4/html/dirs.html
-  /usr/share/doc/libmtp-0.2.4/html/doxygen.css
-  /usr/share/doc/libmtp-0.2.4/html/doxygen.png
-  /usr/share/doc/libmtp-0.2.4/html/examples.html
-  /usr/share/doc/libmtp-0.2.4/html/examples_8h-source.html
-  /usr/share/doc/libmtp-0.2.4/html/files.html
-  /usr/share/doc/libmtp-0.2.4/html/files_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/folders_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/functions.html
-  /usr/share/doc/libmtp-0.2.4/html/functions_vars.html
-  /usr/share/doc/libmtp-0.2.4/html/getfile_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/getplaylist_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/globals.html
-  /usr/share/doc/libmtp-0.2.4/html/globals_func.html
-  /usr/share/doc/libmtp-0.2.4/html/globals_type.html
-  /usr/share/doc/libmtp-0.2.4/html/gphoto2-endian_8h-source.html
-  /usr/share/doc/libmtp-0.2.4/html/group__albums.html
-  /usr/share/doc/libmtp-0.2.4/html/group__basic.html
-  /usr/share/doc/libmtp-0.2.4/html/group__files.html
-  /usr/share/doc/libmtp-0.2.4/html/group__folders.html
-  /usr/share/doc/libmtp-0.2.4/html/group__internals.html
-  /usr/share/doc/libmtp-0.2.4/html/group__objects.html
-  /usr/share/doc/libmtp-0.2.4/html/group__playlists.html
-  /usr/share/doc/libmtp-0.2.4/html/group__structar.html
-  /usr/share/doc/libmtp-0.2.4/html/group__tracks.html
-  /usr/share/doc/libmtp-0.2.4/html/group__types.html
-  /usr/share/doc/libmtp-0.2.4/html/hotplug_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/index.html
-  /usr/share/doc/libmtp-0.2.4/html/libmtp_8c.html
-  /usr/share/doc/libmtp-0.2.4/html/libmtp_8h-source.html
-  /usr/share/doc/libmtp-0.2.4/html/libmtp_8h.html
-  /usr/share/doc/libmtp-0.2.4/html/libptp-stdint_8h-source.html
-  /usr/share/doc/libmtp-0.2.4/html/libusb-glue_8h-source.html
-  /usr/share/doc/libmtp-0.2.4/html/mainpage_8h-source.html
-  /usr/share/doc/libmtp-0.2.4/html/modules.html
-  /usr/share/doc/libmtp-0.2.4/html/newfolder_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/playlists_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/ptp_8h-source.html
-  /usr/share/doc/libmtp-0.2.4/html/refactortest_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/sendfile_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/sendtr_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__album__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__device__entry__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__devicestorage__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__file__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__filesampledata__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__folder__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__mtpdevice__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__playlist__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/structLIBMTP__track__struct.html
-  /usr/share/doc/libmtp-0.2.4/html/tab_b.gif
-  /usr/share/doc/libmtp-0.2.4/html/tab_l.gif
-  /usr/share/doc/libmtp-0.2.4/html/tab_r.gif
-  /usr/share/doc/libmtp-0.2.4/html/tabs.css
-  /usr/share/doc/libmtp-0.2.4/html/tracks_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/trexist_8c-example.html
-  /usr/share/doc/libmtp-0.2.4/html/unicode_8c.html
-  /usr/share/doc/libmtp-0.2.4/html/unicode_8h-source.html
-  /usr/share/doc/libmtp-0.2.4/html/util_8c.html
-  /usr/share/doc/libmtp-0.2.4/html/util_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/annotated.html
+  /usr/share/doc/libmtp-0.2.5/html/delfile_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/detect_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/dir_2acdc6697d1aceb61658a9ff22a91c68.html
+  /usr/share/doc/libmtp-0.2.5/html/dir_68be5385f6c8459aa065ff3031350951.html
+  /usr/share/doc/libmtp-0.2.5/html/dir_8d32b95aecf3b277f62f9a47d9b979d3.html
+  /usr/share/doc/libmtp-0.2.5/html/dir_917a40a2d6c671ad0f40bc5ec265cc1b.html
+  /usr/share/doc/libmtp-0.2.5/html/dirs.html
+  /usr/share/doc/libmtp-0.2.5/html/doxygen.css
+  /usr/share/doc/libmtp-0.2.5/html/doxygen.png
+  /usr/share/doc/libmtp-0.2.5/html/examples.html
+  /usr/share/doc/libmtp-0.2.5/html/examples_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/files.html
+  /usr/share/doc/libmtp-0.2.5/html/files_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/folders_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/functions.html
+  /usr/share/doc/libmtp-0.2.5/html/functions_vars.html
+  /usr/share/doc/libmtp-0.2.5/html/getfile_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/getplaylist_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/globals.html
+  /usr/share/doc/libmtp-0.2.5/html/globals_func.html
+  /usr/share/doc/libmtp-0.2.5/html/globals_type.html
+  /usr/share/doc/libmtp-0.2.5/html/gphoto2-endian_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/group__albums.html
+  /usr/share/doc/libmtp-0.2.5/html/group__basic.html
+  /usr/share/doc/libmtp-0.2.5/html/group__files.html
+  /usr/share/doc/libmtp-0.2.5/html/group__folders.html
+  /usr/share/doc/libmtp-0.2.5/html/group__internals.html
+  /usr/share/doc/libmtp-0.2.5/html/group__objects.html
+  /usr/share/doc/libmtp-0.2.5/html/group__playlists.html
+  /usr/share/doc/libmtp-0.2.5/html/group__structar.html
+  /usr/share/doc/libmtp-0.2.5/html/group__tracks.html
+  /usr/share/doc/libmtp-0.2.5/html/group__types.html
+  /usr/share/doc/libmtp-0.2.5/html/hotplug_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/index.html
+  /usr/share/doc/libmtp-0.2.5/html/libmtp_8c.html
+  /usr/share/doc/libmtp-0.2.5/html/libmtp_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/libmtp_8h.html
+  /usr/share/doc/libmtp-0.2.5/html/libptp-stdint_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/libusb-glue_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/mainpage_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/modules.html
+  /usr/share/doc/libmtp-0.2.5/html/newfolder_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/playlists_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/ptp_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/refactortest_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/sendfile_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/sendtr_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__album__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__device__entry__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__devicestorage__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__file__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__filesampledata__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__folder__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__mtpdevice__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__playlist__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/structLIBMTP__track__struct.html
+  /usr/share/doc/libmtp-0.2.5/html/tab_b.gif
+  /usr/share/doc/libmtp-0.2.5/html/tab_l.gif
+  /usr/share/doc/libmtp-0.2.5/html/tab_r.gif
+  /usr/share/doc/libmtp-0.2.5/html/tabs.css
+  /usr/share/doc/libmtp-0.2.5/html/tracks_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/trexist_8c-example.html
+  /usr/share/doc/libmtp-0.2.5/html/unicode_8c.html
+  /usr/share/doc/libmtp-0.2.5/html/unicode_8h-source.html
+  /usr/share/doc/libmtp-0.2.5/html/util_8c.html
+  /usr/share/doc/libmtp-0.2.5/html/util_8h-source.html
 
 ------------------
 
 Port Notes:
+
+----- version 0.2.5-1 -----
+Version bump.
 
 ----- version 0.2.4-1 -----
 Version bump.
