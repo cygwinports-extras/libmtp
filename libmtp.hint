@@ -1,7 +1,6 @@
-category: Audio Libs
-requires: cygwin libiconv2 libusb-win32
-external-source: libmtp
-sdesc: "Media Transfer Protocol library (runtime)"
+category: Audio
+requires: cygwin libmtp8
+sdesc: "Media Transfer Protocol library (utilities)"
 ldesc: "libmtp is an implementation of Microsoft's Media Transfer 
 Protocol (MTP) in the form of a library suitable primarily for POSIX 
 compliant operating systems. We implement MTP Basic, the stuff proposed 

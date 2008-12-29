@@ -7,18 +7,18 @@ standardization.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libiconv2-1.11-1
+  libiconv2-1.12-1
   libusb-win32-0.1.12.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.12-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool-2.2.2-2
+  libtool-2.2.6a-1
   make-3.81-1
   sed-4.1.5-2
 
@@ -31,17 +31,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libmtp-0.3.0-X-src.tar.bz2
+  unpack libmtp-0.3.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libmtp-0.3.0-X.cygport all
+  cygport ./libmtp-0.3.5-X.cygport all
 
 This will create:
-  /usr/src/libmtp-0.3.0-X-src.tar.bz2
-  /usr/src/libmtp-0.3.0-X.tar.bz2
-  /usr/src/libmtp-devel-0.3.0-X.tar.bz2
-  /usr/src/libmtp8-0.3.0-X.tar.bz2
+  /usr/src/libmtp-0.3.5-X-src.tar.bz2
+  /usr/src/libmtp-0.3.5-X.tar.bz2
+  /usr/src/libmtp-devel-0.3.5-X.tar.bz2
+  /usr/src/libmtp8-0.3.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -69,12 +69,12 @@ Files included in the binary packages:
   /usr/bin/mtp-thumb.exe
   /usr/bin/mtp-tracks.exe
   /usr/bin/mtp-trexist.exe
-  /usr/share/doc/libmtp-0.3.0/AUTHORS
-  /usr/share/doc/libmtp-0.3.0/COPYING
-  /usr/share/doc/libmtp-0.3.0/ChangeLog
-  /usr/share/doc/libmtp-0.3.0/INSTALL
-  /usr/share/doc/libmtp-0.3.0/README
-  /usr/share/doc/libmtp-0.3.0/TODO
+  /usr/share/doc/libmtp-0.3.5/AUTHORS
+  /usr/share/doc/libmtp-0.3.5/COPYING
+  /usr/share/doc/libmtp-0.3.5/ChangeLog
+  /usr/share/doc/libmtp-0.3.5/INSTALL
+  /usr/share/doc/libmtp-0.3.5/README
+  /usr/share/doc/libmtp-0.3.5/TODO
 
 (libmtp8)
   /usr/bin/cygmtp-8.dll
@@ -85,11 +85,14 @@ Files included in the binary packages:
   /usr/lib/libmtp.dll.a
   /usr/lib/libmtp.la
   /usr/lib/pkgconfig/libmtp.pc
-  /usr/share/doc/libmtp-0.3.0/html/*
+  /usr/share/doc/libmtp-0.3.5/html/*
 
 ------------------
 
 Port Notes:
+
+----- version 0.3.5-1 -----
+Version bump.
 
 ----- version 0.3.0-1 -----
 ABI version bump.

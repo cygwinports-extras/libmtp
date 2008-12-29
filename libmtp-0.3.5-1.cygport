@@ -1,0 +1,16 @@
+DESCRIPTION="Media Transfer Protocol library"
+HOMEPAGE="http://libmtp.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+PATCH_URI="
+	0.3.5-vpath.patch
+	0.3.5-iconv.patch
+	0.3.5-no-libusb.pc.patch
+	0.3.5-ptp_ek_setserial.patch
+"
+
+PKG_NAMES="${PN} ${PN}8 ${PN}-devel"
+libmtp_CONTENTS="--exclude=html usr/bin/mtp-* usr/share/"
+libmtp8_CONTENTS="usr/bin/cygmtp-8.dll"
+libmtp_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/${P}/html/"
+
+DISTCLEANFILES="libmtp.pc"
