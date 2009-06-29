@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libiconv2 libusb-win32
+requires: libiconv2 libusb-win32
 external-source: libmtp
 sdesc: "Media Transfer Protocol library (runtime)"
 ldesc: "libmtp is an implementation of Microsoft's Media Transfer 
