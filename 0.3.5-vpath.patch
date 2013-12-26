@@ -1,9 +1,0 @@
---- origsrc/libmtp-0.3.5/src/Makefile.am	2008-12-28 21:50:33.706250000 -0600
-+++ src/libmtp-0.3.5/src/Makefile.am	2008-12-28 21:57:46.456250000 -0600
-@@ -50,5 +50,5 @@
- 	$(INSTALL) libmtp.lib $(DESTDIR)$(libdir)
- endif
- 
--libmtp_la_LDFLAGS=@LDFLAGS@  -no-undefined -export-symbols libmtp.sym -version-info $(W32LF) $(SOVERSION)
-+libmtp_la_LDFLAGS=@LDFLAGS@  -no-undefined -export-symbols $(srcdir)/libmtp.sym -version-info $(W32LF) $(SOVERSION)
- libmtp_la_DEPENDENCIES=libmtp.sym

@@ -1,5 +1,5 @@
 NAME="libmtp"
-VERSION=0.3.5
+VERSION=1.1.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Media Transfer Protocol library"
@@ -8,17 +8,19 @@ in the form of a library suitable primarily for POSIX compliant operating
 systems. We implement MTP Basic, the stuff proposed for standardization."
 HOMEPAGE="http://libmtp.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libmtp/libmtp-${VERSION}.tar.gz"
-PATCH_URI="
-	0.3.5-vpath.patch
-	0.3.5-iconv.patch
-	0.3.5-no-libusb.pc.patch
-	0.3.5-ptp_ek_setserial.patch
-"
 
-PKG_NAMES="${NAME} ${NAME}8 ${NAME}-devel ${NAME}-doc"
+PKG_NAMES="${NAME} ${NAME}9 ${NAME}-devel ${NAME}-doc"
+libmtp_CATEGORY="System"
+libmtp_SUMMARY=${SUMMARY/library/utilities}
 libmtp_CONTENTS="--exclude=html usr/bin/mtp-* usr/share/"
-libmtp8_CONTENTS="usr/bin/cygmtp-8.dll"
+libmtp9_CONTENTS="usr/bin/cygmtp-9.dll"
 libmtp_devel_CONTENTS="usr/include/ usr/lib/"
+libmtp_doc_CATEGORY="Doc"
 libmtp_doc_CONTENTS="usr/share/doc/${NAME}/html/"
 
 DISTCLEANFILES="libmtp.pc"
+
+CYGCONF_ARGS="--enable-doxygen"
+MAKEOPTS+=" htmldocdir=\$(htmldir)"
+
+DOCS="README.windows.txt"
