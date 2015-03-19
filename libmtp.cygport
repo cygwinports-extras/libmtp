@@ -1,6 +1,6 @@
 NAME="libmtp"
 VERSION=1.1.6
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="Media Transfer Protocol library"
 DESCRIPTION="libmtp is an implementation of Microsoft's Media Transfer Protocol
